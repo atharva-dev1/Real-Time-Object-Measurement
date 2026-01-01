@@ -1,4 +1,4 @@
-# Real-Time Object Measurement using OpenCV
+# Real-Time Object Measurement using OpenCV📷
 
 This project uses Computer Vision to measure the dimensions (Width and Height) of objects in real-time. It uses an **A4 size paper** as a reference object to calibrate the pixel-to-centimeter ratio, allowing for accurate measurements of any object placed on it.
 
@@ -11,11 +11,21 @@ This project uses Computer Vision to measure the dimensions (Width and Height) o
 
 ---
 
+## 🖼️ Output
+ <img width="1920" height="1080" alt="Screenshot (73)" src="https://github.com/user-attachments/assets/e87facba-7321-42d9-af14-b99097206269" />
+
+ <img width="1920" height="1080" alt="Screenshot (76)" src="https://github.com/user-attachments/assets/9cad98da-cc78-4811-86eb-2fb42bc505df" />
+
+ <img width="1920" height="1080" alt="Screenshot (70)" src="https://github.com/user-attachments/assets/505ffa11-152c-426d-aa23-71510643f5cd" />
+
+
+---
+
 ## 🛠 Prerequisites
 
 Before running the project, ensure you have the following installed:
 
-* Python 3.x
+* Python 3.12
 * OpenCV (`cv2`)
 * NumPy
 
@@ -30,7 +40,7 @@ pip install opencv-python numpy
 
 ## 📂 Project Structure
 
-* `main.py`: The primary script that handles the webcam feed and logic.
+* `ObjectMeasurement.py`: The primary script that handles the webcam feed and logic.
 * `utlis.py`: Helper functions for contour detection, image warping, and distance calculation.
 * `1.jpg`: Default image path if the webcam is not being used.
 
@@ -69,7 +79,7 @@ python ObjectMeasurement.py
 
 * **Lighting:** Ensure even lighting to avoid shadows that the software might mistake for object edges.
 * **Contrast:** Use a background color that contrasts well with the A4 paper (e.g., a dark table).
-* **Calibration:** If your measurements are slightly off, adjust the `scale` variable in `main.py`.
+* **Calibration:** If your measurements are slightly off, adjust the `scale` variable in `ObjectMeasurement.py`.
 
 
 
